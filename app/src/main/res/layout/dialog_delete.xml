@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="125dp"
+        android:layout_height="7dp"
+        android:background="#A8A8A8"
+        android:layout_gravity="center"
+        android:layout_margin="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are you sure want to delete\n This Note?"
+        android:fontFamily="@font/product_sans_bold"
+        android:gravity="center"
+        android:textSize="@dimen/_17ssp"
+        />
+    <TextView
+        android:id="@+id/tvNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="7dp"
+        android:text="NO"
+        android:background="@drawable/no_btn"
+        android:textColor="@color/darkBlue"
+        android:gravity="center"
+        android:fontFamily="@font/product_sans_bold"/>
+    <TextView
+        android:id="@+id/tvYes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/yes_btn"
+        android:padding="7dp"
+        android:textColor="@color/white"
+        android:text="YES"
+        android:gravity="center"
+        android:fontFamily="@font/product_sans_bold"/>
+
+
+</LinearLayout>
