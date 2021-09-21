@@ -23,7 +23,7 @@
 
             <ImageView
                 android:id="@+id/ivAllNotes"
-                 android:layout_margin="5dp"
+                 android:layout_margin="10dp"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:background="@drawable/filter_bng"

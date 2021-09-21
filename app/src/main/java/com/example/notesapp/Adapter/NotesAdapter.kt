@@ -10,7 +10,7 @@ import com.example.notesapp.databinding.LayoutNotesBinding
 import com.example.notesapp.entity.Notes
 import com.example.notesapp.ui.fragments.HomeFragmentDirections
 
-class NotesAdapter(val requireContext: Context,val NotesList: List<Notes>) : RecyclerView.Adapter<NotesAdapter.notesViewHolder>() {
+class NotesAdapter(val requireContext: Context,var NotesList: List<Notes>) : RecyclerView.Adapter<NotesAdapter.notesViewHolder>() {
     inner class notesViewHolder( public val binding : LayoutNotesBinding)
         :RecyclerView.ViewHolder(binding.root)
 
@@ -49,6 +49,10 @@ class NotesAdapter(val requireContext: Context,val NotesList: List<Notes>) : Rec
     }
 
     override fun getItemCount(): Int = NotesList.size
+    fun filtering(filteredList: ArrayList<Notes>) {
+        NotesList=filteredList
+        this.notifyDataSetChanged()
+    }
 
 
 }

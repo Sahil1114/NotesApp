@@ -52,20 +52,21 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="7dp"
-                android:src="@drawable/red_circle"
+                android:background="@drawable/red_circle"
+
                 />
             <ImageView
                 android:id="@+id/iv2"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="20dp"
-                android:src="@drawable/orange_circle"/>
+                android:background="@drawable/orange_circle"/>
             <ImageView
                 android:id="@+id/iv3"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="20dp"
-                android:src="@drawable/yellow_circle"/>
+                android:background="@drawable/yellow_circle"/>
         </LinearLayout>
 
         <EditText

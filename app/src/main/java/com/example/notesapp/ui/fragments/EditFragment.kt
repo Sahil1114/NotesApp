@@ -98,7 +98,7 @@ class EditFragment : Fragment() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId==R.id.delete_menu){
-            val bottomSheet :BottomSheetDialog=BottomSheetDialog(requireContext())
+            val bottomSheet :BottomSheetDialog=BottomSheetDialog(requireContext(),R.style.AppBottomSheetDialogTheme)
             bottomSheet.setContentView(R.layout.dialog_delete)
             val textViewYes=bottomSheet.findViewById<TextView>(R.id.tvYes)
             val textViewNo=bottomSheet.findViewById<TextView>(R.id.tvNo)
@@ -106,7 +106,7 @@ class EditFragment : Fragment() {
             textViewYes?.setOnClickListener {
                 viewModel.deleteNotes(oldNotes.dataTransfer.id !!)
                 bottomSheet.dismiss()
-            //    Navigation.findNavController(it !!).navigate(R.id.action_editFragment_to_homeFragment)
+                Navigation.findNavController(it !!).navigate(R.id.action_editFragment_to_homeFragment)
             }
             textViewNo?.setOnClickListener {
                 bottomSheet.dismiss()

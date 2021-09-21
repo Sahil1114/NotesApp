@@ -2,14 +2,16 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    style="@style/AppModalStyle"
     android:orientation="vertical"
     android:layout_height="match_parent">
 
     <View
         android:layout_width="125dp"
         android:layout_height="7dp"
-        android:background="#A8A8A8"
         android:layout_gravity="center"
+        android:background="@drawable/yes_btn"
+        android:backgroundTint="#A8A8A8"
         android:layout_margin="12dp"/>
 
     <TextView
