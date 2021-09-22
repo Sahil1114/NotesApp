@@ -23,9 +23,11 @@
 
             <ImageView
                 android:id="@+id/ivAllNotes"
-                 android:layout_margin="10dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_margin="5dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:background="@drawable/filter_bng"
                 android:src="@drawable/ic_btn_filter"/>
 
@@ -36,7 +38,7 @@
                 android:textSize="18sp"
                 android:text="High"
                 android:textColor="@color/darkBlue"
-                android:fontFamily="@font/product_sans_regular"
+                android:fontFamily="@font/product_sans_bold"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
                 android:paddingTop="10dp"
@@ -51,7 +53,7 @@
                 android:textSize="18sp"
                 android:text="Medium"
                 android:textColor="@color/blue"
-                android:fontFamily="@font/product_sans_regular"
+                android:fontFamily="@font/product_sans_bold"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
                 android:paddingTop="10dp"
@@ -66,7 +68,7 @@
                 android:textSize="18sp"
                 android:text="Low"
                 android:textColor="@color/skyBlue"
-                android:fontFamily="@font/product_sans_regular"
+                android:fontFamily="@font/product_sans_bold"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
                 android:paddingTop="10dp"
